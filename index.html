@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Muhamad Aiman Faiz | Data Analyst</title>
+  <meta name="description" content="Portfolio of Muhamad Aiman Faiz, UCL MEng graduate: financial modelling, data analysis and SQL projects for graduate data and business analyst roles.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ============ NAVIGATION ============ -->
+  <header class="nav">
+    <div class="nav__inner">
+      <a href="#top" class="nav__brand">Aiman Faiz</a>
+      <button class="nav__toggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav__links">
+        <a href="#story">My story</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact" class="nav__cta">Get in touch</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- ============ HERO (warm) ============ -->
+    <section class="hero warm">
+      <div class="container hero__grid">
+        <div class="hero__text reveal">
+          <p class="eyebrow">Graduate Data &amp; Business Analyst · UCL MEng (2:1)</p>
+          <h1>Hi, I'm Aiman.<br><span class="accent-warm">I turn messy numbers</span> into decisions people can act on.</h1>
+          <p class="lead">
+            I'm a UCL engineering graduate who enjoys the analytical side of every project: building a 25-year financial model for a bridge, turning thousands of raw sensor readings into a clean dataset, and testing whether a result holds up when the assumptions change.
+          </p>
+          <div class="hero__actions">
+            <a href="#projects" class="btn btn--primary">See my projects</a>
+            <a href="assets/cv/Aiman_Faiz_CV_Data_Analyst.pdf" class="btn btn--ghost" target="_blank" rel="noopener">Download CV</a>
+          </div>
+        </div>
+        <div class="hero__collage reveal">
+          <figure class="c1"><img src="assets/img/graduation.jpg" alt="Aiman in graduation gown on the South Bank with Big Ben behind" style="object-position:40% 50%"></figure>
+          <figure class="c2"><img src="assets/img/volleyball-1.jpg" alt="KUGEM Volleyball Club team photo"></figure>
+          <figure class="c3"><img src="assets/img/bike-gauge.jpg" alt="Strain gauge I bonded and soldered onto the bike frame"></figure>
+          <div class="hero__badge">
+            <strong>NPV +US$ 152m</strong>
+            <span>25-year bridge model, base case</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ MY STORY (warm) ============ -->
+    <section id="story" class="section warm">
+      <div class="container story">
+        <div class="story__head reveal">
+          <p class="eyebrow">My story</p>
+          <h2 class="serif">An engineer's eye for evidence, applied to business questions</h2>
+        </div>
+        <div class="story__grid">
+        <div class="story__body reveal">
+          <p>
+            I grew up in Malaysia and studied A-Levels at Kolej MARA Seremban, where I founded a cultural and traditional music society and served on the Students' Representative Council.
+            In 2022 I came to UCL as a <strong>MARA Young Talent Programme scholar</strong> to study Mechanical Engineering, graduating with a 2:1.
+          </p>
+          <p>
+            The part of engineering I enjoy most is the analysis: deciding what to measure, cleaning it, checking it and explaining what it means.
+            In my final year I owned the experimental data for an industry project with Cannondale, and in a finance module I helped model whether a USD 800 million bridge would pay for itself.
+          </p>
+          <p>
+            In my first term I founded <strong>KUGEM Volleyball Club</strong>, and alongside my studies I kept compliance records accurate for 60+ rental properties.
+            I'm building my SQL and Tableau skills through a personal project on London bike-hire data, and I'm looking for a <strong>graduate data analyst or business analyst role</strong> in London.
+          </p>
+        </div>
+        <div class="story__photos reveal">
+          <img src="assets/img/lab-team.jpg" alt="With coursemates in the UCL workshop">
+          <img src="assets/img/ucl.jpg" alt="The UCL Portico building">
+        </div>
+        </div>
+        <ul class="facts reveal">
+          <li><span class="facts__num">2:1</span><span>MEng Mechanical Engineering, UCL</span></li>
+          <li><span class="facts__num">25 yrs</span><span>of cash flow forecast in the bridge model</span></li>
+          <li><span class="facts__num">16</span><span>sensor channels processed into clean datasets</span></li>
+          <li><span class="facts__num">60+</span><span>properties with records kept accurate</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ PROJECTS (clean engineering) ============ -->
+    <section id="projects" class="section eng">
+      <div class="container">
+          <div class="eng__head reveal">
+            <p class="mono-label">// 01 — Selected analysis</p>
+            <h2>Analytical projects</h2>
+            <p class="eng__sub">Three in-depth case studies, followed by more modelling work. Click any chart to enlarge it.</p>
+          </div>
+
+          <article class="case reveal">
+            <div class="case__media">
+              <div class="gallery">
+                <img src="assets/img/bridge-cashflow.png" alt="Net cash flow and cumulative discounted cash flow over 25 years" class="gallery__main gallery__main--contain">
+                <div class="gallery__thumbs">
+                  <img src="assets/img/bridge-revenue.png" alt="Revenue mix over the operating period">
+                </div>
+              </div>
+            </div>
+            <div class="case__body">
+              <p class="mono-label">CEGE0016 Finance &amp; Economics for Engineers · Team of 10 · 2026</p>
+              <h3>Singapore–Batam Bridge: 25-Year Financial Model</h3>
+              <p class="case__lead">Would a USD 800 million cross-border bridge pay for itself? We built a 25-year cash flow model covering construction, operating costs and four revenue streams, then tested how robust the answer was.</p>
+              <h4>What I did</h4>
+              <ul class="ticks">
+              <li>Helped build the model forecasting <strong>annual cash flows, construction and O&amp;M costs</strong>, and toll and non-toll revenue from 19,713 opening daily vehicles</li>
+              <li>Applied <strong>NPV, cash-flow and scenario analysis</strong>. The base case gives an <strong>NPV of +US$ 152m at a 5% discount rate</strong>, with tolls making up about three-quarters of revenue</li>
+              <li>Wrote the team's <strong>mixed funding strategy</strong>: SPV equity, bank debt during construction, Viability Gap Funding, guarantees and Asian Development Bank support, then refinancing into long-term bonds</li>
+              <li>Assessed wider impacts on connectivity, trade and regional development</li>
+            </ul>
+              <div class="tags"><span>Excel</span><span>Financial modelling</span><span>NPV</span><span>Scenario analysis</span><span>Project finance</span></div>
+            </div>
+          </article>
+          <article class="case reveal case--flip">
+            <div class="case__media">
+              <div class="gallery">
+                <img src="assets/img/strain-lc1.jpg" alt="Bending strain against load step for load case 1" class="gallery__main gallery__main--contain">
+                <div class="gallery__thumbs">
+                  <img src="assets/img/bike-gauge.jpg" alt="Bonded strain gauge on the frame">
+                  <img src="assets/img/parity.jpg" alt="Model predictions against true values">
+                  <img src="assets/img/convergence.jpg" alt="Optimisation convergence history">
+                  <img src="assets/img/bike-rig.jpg" alt="The test rig with the frame under load">
+                </div>
+              </div>
+            </div>
+            <div class="case__body">
+              <p class="mono-label">MECH0073 MEng final-year project · With Cannondale · 2025–26</p>
+              <h3>From Raw Sensor Counts to a Validated Dataset</h3>
+              <p class="case__lead">Our team optimised a mountain bike frame using simulation and machine learning, and every model needed real data to check against. I owned that data, from the sensors to the final dataset.</p>
+              <h4>What I did</h4>
+              <ul class="ticks">
+              <li>Converted raw <strong>HX711 digital counts into strain</strong> for 16 gauges and picked out the stable part of each signal</li>
+              <li>Checked the measurement system against theory first: <strong>under 1% (axial) and ~0.83% (bending)</strong> difference</li>
+              <li>Repeated every load step and used <strong>means and standard deviations</strong> to judge repeatability. I set a <strong>signal-to-noise threshold</strong> and flagged drifting channels before they could distort the results</li>
+              <li>Delivered clean datasets for three load cases, which the team used to <strong>validate the simulation model</strong> behind their Bayesian optimisation</li>
+            </ul>
+              <div class="tags"><span>Data cleaning</span><span>Validation</span><span>Statistics</span><span>Excel</span><span>Arduino</span></div>
+            </div>
+          </article>
+          <article class="case reveal">
+            <div class="case__media">
+              <div class="sql-card" aria-label="Example SQL query from the bike-hire project">
+<pre><span class="c">-- Busiest start stations, weekday mornings</span>
+<span class="k">WITH</span> am <span class="k">AS</span> (
+  <span class="k">SELECT</span> start_station,
+         <span class="f">COUNT</span>(*) <span class="k">AS</span> trips
+  <span class="k">FROM</span>   journeys
+  <span class="k">WHERE</span>  <span class="f">strftime</span>(<span class="s">'%w'</span>, start_time) <span class="k">BETWEEN</span> <span class="s">'1'</span> <span class="k">AND</span> <span class="s">'5'</span>
+    <span class="k">AND</span>  <span class="f">strftime</span>(<span class="s">'%H'</span>, start_time) <span class="k">BETWEEN</span> <span class="s">'07'</span> <span class="k">AND</span> <span class="s">'09'</span>
+  <span class="k">GROUP BY</span> start_station
+)
+<span class="k">SELECT</span> * <span class="k">FROM</span> am
+<span class="k">ORDER BY</span> trips <span class="k">DESC</span>
+<span class="k">LIMIT</span> 10;</pre>
+                <p class="sql-card__note">Illustrative query from the project. Results and dashboard coming soon.</p>
+              </div>
+            </div>
+            <div class="case__body">
+              <p class="mono-label">Personal project · SQL &amp; Tableau · In progress</p>
+              <h3>London Bike-Hire Demand Analysis</h3>
+              <p class="case__lead">When and where do Londoners use Santander Cycles? I'm analysing Transport for London's open journey data in SQL to find the demand patterns an operator would care about.</p>
+              <h4>What I'm doing</h4>
+              <ul class="ticks">
+              <li>Cleaning and validating journey records: converting date formats and removing duplicates and out-of-range trips</li>
+              <li>Finding demand by <strong>hour and weekday</strong>, the busiest start stations and the most popular routes</li>
+              <li>Using <strong>joins and common table expressions</strong> to compare morning departures and arrivals by station, which shows where bikes need rebalancing</li>
+              <li>Next step: a <strong>Tableau Public dashboard</strong> to present the findings</li>
+            </ul>
+              <div class="tags"><span>SQL (SQLite)</span><span>CTEs &amp; joins</span><span>Data cleaning</span><span>Tableau</span><span>Open data</span></div>
+            </div>
+          </article>
+          <div class="more reveal">
+            <p class="mono-label">// More analytical work</p>
+            <div class="grid">
+            <article class="card">
+              <div class="card__icon">🔋</div>
+              <div class="card__body">
+                <p class="mono-label">MECH0016 · Y2 · Group 30</p>
+                <h3>Data-Driven Material Selection</h3>
+                <p>Screened 15 materials in Granta EduPack and ranked nine against six criteria. FEA and optimisation then cut the battery tray mass by <strong>30.1%</strong> (198.5 → 137 kg) at a material cost of £615.</p>
+              </div>
+            </article>
+            <article class="card">
+              <div class="card__icon">⛽</div>
+              <div class="card__body">
+                <p class="mono-label">MECH0011 · Y2 · Group lab</p>
+                <h3>Engine Emissions Data Analysis</h3>
+                <p>Research-engine data for petrol and a 20% hexanol blend at three ignition timings. NOx and CO₂ were linked to peak heat-release rate and checked against Otto-cycle predictions.</p>
+              </div>
+            </article>
+            <article class="card">
+              <div class="card__icon">🌊</div>
+              <div class="card__body">
+                <p class="mono-label">ENGF0003 · Y1 · MATLAB</p>
+                <h3>Great Lakes Pollutant Model</h3>
+                <p>A mass-balance model in MATLAB that tracks pollutant concentration over time across Lakes Superior, Michigan-Huron, Erie and Ontario.</p>
+              </div>
+            </article>
+            <article class="card">
+              <div class="card__icon">💧</div>
+              <div class="card__body">
+                <p class="mono-label">MECH0020 · Y3 · Individual</p>
+                <h3>Water Treatment System Sizing</h3>
+                <p>Sized a river-water treatment system for 450 L/s (38.9 million litres a day) from flow and retention-time calculations, and compared options with a weighted decision matrix.</p>
+              </div>
+            </article>
+            <article class="card">
+              <div class="card__icon">📋</div>
+              <div class="card__body">
+                <p class="mono-label">MSIN0068 · Y3 · Team of 8</p>
+                <h3>Project Cost &amp; Risk Planning</h3>
+                <p>Built the cost breakdown, cumulative cost S-curve, schedule and risk register for a 10-month research expedition. I was elected team secretary.</p>
+              </div>
+            </article>
+            <article class="card">
+              <div class="card__icon">🏗️</div>
+              <div class="card__body">
+                <p class="mono-label">MECH0016 · Y2 · Group 30</p>
+                <h3>Evidence-Based Failure Investigation</h3>
+                <p>Weighed the evidence on a crane collapse to find the cause: under-specified bolts and the wrong torque, with a load of 188 kN against a 159 kN limit.</p>
+              </div>
+            </article>
+            </div>
+          </div>
+      </div>
+    </section>
+
+    <!-- ============ EXPERIENCE (warm) ============ -->
+    <section id="experience" class="section warm warm--alt">
+      <div class="container">
+        <div class="story__head reveal">
+          <p class="eyebrow">Beyond the degree</p>
+          <h2 class="serif">Experiences that shaped me</h2>
+          <p class="lead">These are the things I'm proudest of that don't show up on a transcript.</p>
+        </div>
+
+        <div class="tabs reveal" role="tablist">
+          <button class="tab is-active" data-tab="sport" role="tab">🏐 Volleyball</button>
+          <button class="tab" data-tab="work" role="tab">💼 Work</button>
+          <button class="tab" data-tab="community" role="tab">🤝 Leadership &amp; community</button>
+        </div>
+
+        <!-- VOLLEYBALL -->
+        <div class="panel is-active" id="panel-sport">
+          <article class="exp">
+            <div class="exp__photos">
+              <img src="assets/img/volleyball-2.jpg" alt="KUGEM Volleyball Club members after a session">
+              <img src="assets/img/volleyball-1.jpg" alt="KUGEM team at a tournament">
+            </div>
+            <div class="exp__text">
+              <p class="exp__meta">KUGEM Volleyball Club · Oct 2022 – Jun 2026</p>
+              <h3 class="serif">Founder &amp; President</h3>
+              <p>In my first term in London I started a volleyball club for the Malaysian community. It grew into a competitive team of more than 20 active members. I ran training, tournament logistics and team organisation.</p>
+              <ul class="trophies">
+                <li><span>🥇</span><div><strong>Champions</strong>GoMammoth Open League 2023</div></li>
+                <li><span>🥈</span><div><strong>Runners-up</strong>Kent Malaysian Games 2024</div></li>
+                <li><span>🥉</span><div><strong>Bronze</strong>Warwick SEA Games 2025</div></li>
+                <li><span>🥉</span><div><strong>Bronze</strong>Nottingham Malaysian Games 2025</div></li>
+              </ul>
+            </div>
+          </article>
+        </div>
+
+        <!-- WORK -->
+        <div class="panel" id="panel-work">
+          <div class="timeline">
+            <article class="tl">
+              <p class="exp__meta">Oct 2025 – Sep 2026 · London</p>
+              <h3 class="serif">Property Management Operations Intern</h3>
+              <p class="tl__org">CNC Property Services</p>
+              <ul class="hearts">
+                <li>Coordinated maintenance and remedial works across <strong>60+ residential properties</strong> with 5–10 contractors, technicians and tenants</li>
+                <li>Kept compliance records for EICR, EPC, CP12 and fire-door remedial works up to date, and followed defects through to repair</li>
+                <li>Managed a high-season inspection schedule, balancing appointments and workloads across the team</li>
+              </ul>
+            </article>
+            <article class="tl">
+              <p class="exp__meta">Sep 2025 – Jun 2026 · UCL</p>
+              <h3 class="serif">Room Monitor Officer</h3>
+              <p class="tl__org">University College London</p>
+              <ul class="hearts">
+                <li>Checked the AV, projection and control systems in 5–10 teaching rooms every day before sessions</li>
+                <li>Logged faults and escalated them to support teams within set timeframes</li>
+              </ul>
+            </article>
+            <article class="tl tl--photo">
+              <div>
+                <p class="exp__meta">Oct 2023 – Dec 2024 · London</p>
+                <h3 class="serif">Customer Service &amp; Operations Associate</h3>
+                <p class="tl__org">Makan Cafe</p>
+                <ul class="hearts">
+                  <li>Worked with kitchen and floor teams to keep service running smoothly during busy periods</li>
+                  <li>Handled customer requests and unexpected problems under time pressure</li>
+                </ul>
+              </div>
+              <img src="assets/img/cafe-1.jpg" alt="With the Makan Cafe team in the kitchen">
+            </article>
+            <article class="tl">
+              <p class="exp__meta">Feb 2020 – Apr 2020 · Malaysia</p>
+              <h3 class="serif">Mathematics &amp; Physics Tutor</h3>
+              <p class="tl__org">STEM Private Tutoring</p>
+              <ul class="hearts"><li>Explained technical concepts in a way that suited each student's level</li></ul>
+            </article>
+          </div>
+        </div>
+
+        <!-- COMMUNITY -->
+        <div class="panel" id="panel-community">
+          <article class="exp">
+            <div class="exp__photos">
+              <img src="assets/img/carnival-2.jpg" alt="At the International London Malaysia Carnival">
+              <img src="assets/img/carnival-1.jpg" alt="The Perwakilan London stall at the carnival">
+              <img src="assets/img/carnival-3.jpg" alt="Food stalls at the carnival">
+            </div>
+            <div class="exp__text">
+              <p class="exp__meta">High Commission of Malaysia, London · Aug 2024</p>
+              <h3 class="serif">Event Coordinator &amp; Sales Assistant</h3>
+              <p>Helped with event logistics and sales at the International London Malaysia Carnival, a large public event. I answered visitors' questions and adjusted as demand changed through the day.</p>
+            </div>
+          </article>
+          <div class="mini-grid">
+            <article class="mini">
+              <p class="exp__meta">Kolej MARA Seremban · 2020 – 2021</p>
+              <h3 class="serif">Founder &amp; President, Cultural and Traditional Music Society</h3>
+              <p>Organised two performances for audiences of <strong>450+</strong>, and managed a budget of about RM3,600, equipment purchases and external coaches.</p>
+            </article>
+            <article class="mini">
+              <p class="exp__meta">Kolej MARA Seremban · 2020 – 2021</p>
+              <h3 class="serif">Welfare EXCO, Students' Representative Council</h3>
+              <p>Represented <strong>380+ students</strong> and built an online feedback system so their concerns reached college management faster.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SKILLS (clean engineering) ============ -->
+    <section id="skills" class="section eng">
+      <div class="container">
+        <div class="eng__head reveal">
+          <p class="mono-label">// 02 — Toolkit</p>
+          <h2>Skills</h2>
+        </div>
+          <div class="skills reveal">
+            <div class="skill-group"><h3>Analysis &amp; modelling</h3><ul><li>Financial modelling</li><li>NPV &amp; cash-flow analysis</li><li>Scenario &amp; sensitivity analysis</li><li>Multivariable analysis</li><li>Data cleaning &amp; validation</li></ul></div>
+            <div class="skill-group"><h3>Tools</h3><ul><li>Microsoft Excel (strong)</li><li>Python (working)</li><li>MATLAB (working)</li><li>PowerPoint &amp; Word</li></ul></div>
+            <div class="skill-group"><h3>Currently learning</h3><ul><li>SQL (SQLite)</li><li>Tableau</li></ul></div>
+            <div class="skill-group"><h3>Business</h3><ul><li>Project finance</li><li>Strategic performance management</li><li>Stakeholder coordination</li><li>Technical reporting</li></ul></div>
+            <div class="skill-group"><h3>Engineering software</h3><ul><li>Fusion 360</li><li>SolidWorks</li><li>Abaqus</li><li>ANSYS</li></ul></div>
+            <div class="skill-group"><h3>Languages</h3><ul><li>English (IELTS 7.5)</li><li>Malay (native)</li><li>Mandarin (developing)</li></ul></div>
+          </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT (warm) ============ -->
+    <section id="contact" class="section warm contact">
+      <div class="container contact__inner reveal">
+        <h2 class="serif">Let's talk</h2>
+        <p class="lead">I'm looking for graduate data analyst and business analyst roles in London. I'd love to hear from you.</p>
+        <div class="contact__links">
+          <!-- EDIT: put in your real links -->
+          <a class="btn btn--primary" href="mailto:aimannfaizz@gmail.com">✉ aimannfaizz@gmail.com</a>
+          <a class="btn btn--ghost" href="https://www.linkedin.com/in/muhamadaimanfaiz" target="_blank" rel="noopener">LinkedIn</a>
+          <a class="btn btn--ghost" href="https://github.com/muhamadaimanfaiz" target="_blank" rel="noopener">GitHub</a>
+          <a class="btn btn--ghost" href="assets/cv/Aiman_Faiz_CV_Data_Analyst.pdf" target="_blank" rel="noopener">CV (PDF)</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Muhamad Aiman Faiz · Built by hand and hosted on GitHub Pages</p>
+  </footer>
+
+  <!-- Lightbox -->
+  <div class="lightbox" aria-hidden="true">
+    <button class="lightbox__close" aria-label="Close">×</button>
+    <img src="" alt="">
+    <p class="lightbox__cap"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
