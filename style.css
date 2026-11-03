@@ -302,3 +302,18 @@ h2 { font-size: clamp(1.9rem, 3.6vw, 2.7rem); }
 .sql-card .k { color: #7DD3FC; font-weight: 500; } .sql-card .f { color: #FCD34D; } .sql-card .s { color: #86EFAC; } .sql-card .c { color: #94A3B8; font-style: italic; }
 .sql-card__note { margin-top: 12px; font-size: .78rem; color: #94A3B8; border-top: 1px solid rgba(255,255,255,.1); padding-top: 10px; }
 
+
+/* ---------- Role theme ---------- */
+:root {
+  --cream: #F3F8F6; --cream-2: #E6F1EC;
+  --terracotta: #0F766E; --terracotta-dark: #115E59;
+  --brown: #123B37; --brown-soft: #4A6B66;
+  --blue: #0F766E; --blue-soft: #E3F2EE; --eng-bg: #F2F7F6;
+}
+.nav { background: rgba(243,248,246,.88); }
+.hero::before { background: radial-gradient(circle, #0F766E29, transparent 70%); }
+.eng { background-image: linear-gradient(rgba(15,118,110,.05) 1px, transparent 1px), linear-gradient(90deg, rgba(15,118,110,.05) 1px, transparent 1px); }
+.card__icon { background-color: #E3F2EE; background-image: linear-gradient(rgba(15,118,110,.08) 1px, transparent 1px), linear-gradient(90deg, rgba(15,118,110,.08) 1px, transparent 1px); }
+.timeline::before { background: linear-gradient(#0F766E, #0F766E26); }
+.footer { background: #0E2F2C; }
+.ph { background: #E6F1EC; }
