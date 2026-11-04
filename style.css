@@ -317,3 +317,5 @@ h2 { font-size: clamp(1.9rem, 3.6vw, 2.7rem); }
 .timeline::before { background: linear-gradient(#0F766E, #0F766E26); }
 .footer { background: #0E2F2C; }
 .ph { background: #E6F1EC; }
+
+.footer__note { display: inline-block; margin-top: 6px; font-size: .75rem; opacity: .7; }
